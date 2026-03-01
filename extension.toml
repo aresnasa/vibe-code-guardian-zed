@@ -1,0 +1,22 @@
+id = "vibe-code-guardian"
+name = "Vibe Code Guardian"
+version = "0.1.0"
+schema_version = 1
+authors = ["Vibe Coder <vibe@coder.dev>"]
+description = "Game-like checkpoint system for AI-assisted coding - save, load, and rollback your vibe coding sessions"
+repository = "https://github.com/aresnasa/vibe-code-guardian"
+
+[slash_commands."vibe-save"]
+description = "Quick save current state as a checkpoint"
+
+[slash_commands."vibe-checkpoint"]
+description = "Create a named checkpoint with description"
+
+[slash_commands."vibe-rollback"]
+description = "Rollback to a specific checkpoint"
+
+[slash_commands."vibe-timeline"]
+description = "Show all checkpoints timeline"
+
+[slash_commands."vibe-diff"]
+description = "View changes since last checkpoint"
