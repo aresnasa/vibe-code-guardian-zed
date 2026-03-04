@@ -1,6 +1,6 @@
 [package]
 name = "vibe-code-guardian"
-version = "0.1.28"
+version = "0.4.0"
 edition = "2021"
 description = "Game-like checkpoint system for AI-assisted coding - save, load, and rollback your vibe coding sessions"
 license = "MIT"
