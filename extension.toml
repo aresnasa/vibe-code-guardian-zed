@@ -3,20 +3,25 @@ name = "Vibe Code Guardian"
 version = "0.30.0"
 schema_version = 1
 authors = ["Vibe Coder <vibe@coder.dev>"]
-description = "Game-like checkpoint system for AI-assisted coding - save, load, and rollback your vibe coding sessions"
-repository = "https://github.com/aresnasa/vibe-code-guardian"
+description = "Game-like checkpoint system for AI-assisted coding - save, load, and rollback your vibe coding sessions using git"
+repository = "https://github.com/aresnasa/vibe-code-guardian-zed"
 
 [slash_commands."vibe-save"]
-description = "Quick save current state as a checkpoint"
+description = "Quick-save current state as a named git checkpoint"
+requires_argument = false
 
 [slash_commands."vibe-checkpoint"]
-description = "Create a named checkpoint with description"
+description = "Create a named git checkpoint (commit) with a custom message"
+requires_argument = true
 
 [slash_commands."vibe-rollback"]
-description = "Rollback to a specific checkpoint"
+description = "Rollback working tree to a previous checkpoint by git hash"
+requires_argument = false
 
 [slash_commands."vibe-timeline"]
-description = "Show all checkpoints timeline"
+description = "Show recent vibe checkpoint history (git log)"
+requires_argument = false
 
 [slash_commands."vibe-diff"]
-description = "View changes since last checkpoint"
+description = "Show current working tree changes since last checkpoint"
+requires_argument = false
